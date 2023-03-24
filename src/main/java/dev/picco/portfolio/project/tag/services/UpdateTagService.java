@@ -6,9 +6,11 @@ import dev.picco.portfolio.project.tag.domain.Tag;
 import dev.picco.portfolio.project.tag.repositories.TagRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class UpdateTagService {
 
 	private final TagRepository tagRepository;
