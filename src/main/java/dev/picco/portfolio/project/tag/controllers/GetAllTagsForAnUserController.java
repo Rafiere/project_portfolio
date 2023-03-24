@@ -2,7 +2,6 @@ package dev.picco.portfolio.project.tag.controllers;
 
 import dev.picco.portfolio.project.tag.controllers.responses.GetTagByIdResponse;
 import dev.picco.portfolio.project.tag.services.GetAllTagsForAnUserService;
-import dev.picco.portfolio.project.tag.services.GetTagByIdService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
