@@ -18,7 +18,7 @@ public class CreateTagController {
 	private final CreateTagService createTagService;
 
 	@PostMapping("/v1/tag")
-	public ResponseEntity<CreateTagResponse> execute(@Valid @NotNull @RequestBody CreateTagRequest request){
+	public ResponseEntity<CreateTagResponse> execute(@Valid @NotNull @RequestBody final CreateTagRequest request){
 
 		var response = createTagService.execute(request);
 
