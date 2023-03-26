@@ -15,7 +15,7 @@ public class GetProjectByIdController {
 	private final GetProjectByIdService getProjectByIdService;
 
 	@GetMapping("/v1/project/{projectId}")
-	public ResponseEntity<GetProjectByIdResponse> execute(@PathVariable Long projectId){
+	public ResponseEntity<GetProjectByIdResponse> execute(@PathVariable final Long projectId){
 
 		var response = getProjectByIdService.execute(projectId);
 

@@ -17,7 +17,7 @@ public class GetProjectByIdService {
 
 	private final ProjectRepository projectRepository;
 
-	public GetProjectByIdResponse execute(Long projectId) {
+	public GetProjectByIdResponse execute(final Long projectId) {
 
 		Project project = projectRepository.findById(projectId)
 		                                   .orElseThrow(() -> new IllegalArgumentException("A project with ID " +
@@ -31,7 +31,7 @@ public class GetProjectByIdService {
 		                                 getProjectInfoResponse(project));
 	}
 
-	private static List<GetTagByIdResponse> getProjectTagsResponses(Project project) {
+	private static List<GetTagByIdResponse> getProjectTagsResponses(final Project project) {
 
 		return project.getTags()
 		              .stream()
@@ -41,7 +41,7 @@ public class GetProjectByIdService {
 		              .toList();
 	}
 
-	private static GetProjectInfoByIdResponse getProjectInfoResponse(Project project) {
+	private static GetProjectInfoByIdResponse getProjectInfoResponse(final Project project) {
 
 		return GetProjectInfoByIdResponse.of(project.getProjectInfo()
 		                                            .getId(),
@@ -50,7 +50,7 @@ public class GetProjectByIdService {
 		                                     getProjectUrlsResponses(project));
 	}
 
-	private static List<GetProjectUrlByIdResponse> getProjectUrlsResponses(Project project) {
+	private static List<GetProjectUrlByIdResponse> getProjectUrlsResponses(final Project project) {
 
 		return project.getProjectInfo()
 		              .getProjectUrls()

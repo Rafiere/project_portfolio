@@ -30,7 +30,7 @@ public class GetAllProjectsService {
 		                  .toList();
 	}
 
-	private static List<GetTagByIdResponse> getProjectTagsResponses(Project project) {
+	private static List<GetTagByIdResponse> getProjectTagsResponses(final Project project) {
 
 		return project.getTags()
 		              .stream()
@@ -40,7 +40,7 @@ public class GetAllProjectsService {
 		              .toList();
 	}
 
-	private static GetProjectInfoByIdResponse getProjectInfoResponse(Project project) {
+	private static GetProjectInfoByIdResponse getProjectInfoResponse(final Project project) {
 
 		return GetProjectInfoByIdResponse.of(project.getProjectInfo()
 		                                            .getId(),
@@ -49,7 +49,7 @@ public class GetAllProjectsService {
 		                                     getProjectUrlsResponses(project));
 	}
 
-	private static List<GetProjectUrlByIdResponse> getProjectUrlsResponses(Project project) {
+	private static List<GetProjectUrlByIdResponse> getProjectUrlsResponses(final Project project) {
 
 		return project.getProjectInfo()
 		              .getProjectUrls()
