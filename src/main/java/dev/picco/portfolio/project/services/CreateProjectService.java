@@ -13,11 +13,13 @@ import dev.picco.portfolio.tag.domain.Tag;
 import dev.picco.portfolio.tag.repositories.TagRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class CreateProjectService {
 
 	private final ProjectRepository projectRepository;

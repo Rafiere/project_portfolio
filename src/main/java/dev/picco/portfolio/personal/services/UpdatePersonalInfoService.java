@@ -8,11 +8,13 @@ import dev.picco.portfolio.personal.domain.SocialMedia;
 import dev.picco.portfolio.personal.repositories.PersonalInfoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class UpdatePersonalInfoService {
 
 	private final PersonalInfoRepository personalInfoRepository;
