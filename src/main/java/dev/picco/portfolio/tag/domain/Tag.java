@@ -1,4 +1,4 @@
-package dev.picco.portfolio.project.tag.domain;
+package dev.picco.portfolio.tag.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

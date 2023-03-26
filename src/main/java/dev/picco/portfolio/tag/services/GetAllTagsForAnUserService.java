@@ -1,8 +1,8 @@
-package dev.picco.portfolio.project.tag.services;
+package dev.picco.portfolio.tag.services;
 
-import dev.picco.portfolio.project.tag.controllers.responses.GetTagByIdResponse;
-import dev.picco.portfolio.project.tag.domain.Tag;
-import dev.picco.portfolio.project.tag.repositories.TagRepository;
+import dev.picco.portfolio.tag.controllers.responses.GetTagByIdResponse;
+import dev.picco.portfolio.tag.domain.Tag;
+import dev.picco.portfolio.tag.repositories.TagRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

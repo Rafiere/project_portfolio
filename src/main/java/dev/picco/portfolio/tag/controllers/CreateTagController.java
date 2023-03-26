@@ -1,8 +1,8 @@
-package dev.picco.portfolio.project.tag.controllers;
+package dev.picco.portfolio.tag.controllers;
 
-import dev.picco.portfolio.project.tag.controllers.requests.CreateTagRequest;
-import dev.picco.portfolio.project.tag.controllers.responses.CreateTagResponse;
-import dev.picco.portfolio.project.tag.services.CreateTagService;
+import dev.picco.portfolio.tag.controllers.requests.CreateTagRequest;
+import dev.picco.portfolio.tag.controllers.responses.CreateTagResponse;
+import dev.picco.portfolio.tag.services.CreateTagService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;

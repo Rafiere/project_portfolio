@@ -1,7 +1,7 @@
-package dev.picco.portfolio.project.tag.controllers;
+package dev.picco.portfolio.tag.controllers;
 
-import dev.picco.portfolio.project.tag.controllers.responses.GetTagByIdResponse;
-import dev.picco.portfolio.project.tag.services.GetTagByIdService;
+import dev.picco.portfolio.tag.controllers.responses.GetTagByIdResponse;
+import dev.picco.portfolio.tag.services.GetTagByIdService;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package dev.picco.portfolio.project.tag.controllers.responses;
+package dev.picco.portfolio.tag.controllers.responses;
 
 public record GetTagByIdResponse(Long tagId, String tagName, String tagColor) {
 

@@ -1,4 +1,4 @@
-package dev.picco.portfolio.project.tag.controllers.requests;
+package dev.picco.portfolio.tag.controllers.requests;
 
 import jakarta.validation.constraints.NotBlank;
 

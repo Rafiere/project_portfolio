@@ -1,6 +1,6 @@
-package dev.picco.portfolio.project.tag.controllers;
+package dev.picco.portfolio.tag.controllers;
 
-import dev.picco.portfolio.project.tag.services.DeleteTagService;
+import dev.picco.portfolio.tag.services.DeleteTagService;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

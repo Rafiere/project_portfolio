@@ -1,6 +1,6 @@
-package dev.picco.portfolio.project.tag.services;
+package dev.picco.portfolio.tag.services;
 
-import dev.picco.portfolio.project.tag.repositories.TagRepository;
+import dev.picco.portfolio.tag.repositories.TagRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
