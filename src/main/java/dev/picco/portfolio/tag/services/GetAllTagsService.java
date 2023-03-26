@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class GetAllTagsForAnUserService {
+public class GetAllTagsService {
 
 	private final TagRepository tagRepository;
 
