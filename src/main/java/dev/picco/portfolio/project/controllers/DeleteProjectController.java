@@ -14,7 +14,7 @@ public class DeleteProjectController {
 	private final DeleteProjectService deleteProjectService;
 
 	@DeleteMapping("/v1/project/{projectId}")
-	public ResponseEntity<Void> execute(@PathVariable Long projectId){
+	public ResponseEntity<Void> execute(@PathVariable final Long projectId){
 
 		deleteProjectService.execute(projectId);
 
