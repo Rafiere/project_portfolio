@@ -34,4 +34,24 @@ public class Project {
 	public static Project of(final String name, final String description, final List<Tag> tags, final ProjectInfo projectInfo){
 		return new Project(name, description, tags, projectInfo);
 	}
+
+	public Project update(final String newName, final String newDescription, final List<Tag> newTags, final ProjectInfo newProjectInfo){
+		if(newName != null){
+			this.name = newName;
+		}
+
+		if(newDescription != null){
+			this.description = newDescription;
+		}
+
+		if(newTags != null){
+			this.tags = newTags;
+		}
+
+		if(newProjectInfo != null){
+			this.projectInfo = newProjectInfo;
+		}
+
+		return this;
+	}
 }
