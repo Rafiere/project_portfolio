@@ -8,6 +8,6 @@ import java.util.Optional;
 
 public interface PersonalInfoRepository extends JpaRepository<PersonalInfo, Long> {
 
-	@Query("SELECT pi FROM PersonalInfo pi LIMIT 1")
+	@Query("SELECT pi FROM PersonalInfo pi")
 	Optional<PersonalInfo> findFirstPersonalInfo();
 }
