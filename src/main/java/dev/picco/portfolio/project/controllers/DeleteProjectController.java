@@ -1,6 +1,7 @@
 package dev.picco.portfolio.project.controllers;
 
 import dev.picco.portfolio.project.services.DeleteProjectService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
+@Tag(name = "project")
 public class DeleteProjectController {
 
 	private final DeleteProjectService deleteProjectService;

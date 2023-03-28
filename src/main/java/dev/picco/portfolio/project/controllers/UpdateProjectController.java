@@ -3,6 +3,7 @@ package dev.picco.portfolio.project.controllers;
 import dev.picco.portfolio.project.controllers.requests.CreateProjectRequest;
 import dev.picco.portfolio.project.controllers.responses.CreateProjectResponse;
 import dev.picco.portfolio.project.services.UpdateProjectService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
+@Tag(name = "project")
 public class UpdateProjectController {
 
 	private final UpdateProjectService updateProjectService;

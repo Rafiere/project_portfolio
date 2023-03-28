@@ -3,6 +3,7 @@ package dev.picco.portfolio.tag.controllers;
 import dev.picco.portfolio.tag.controllers.requests.CreateTagRequest;
 import dev.picco.portfolio.tag.controllers.responses.CreateTagResponse;
 import dev.picco.portfolio.tag.services.UpdateTagService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
+@Tag(name = "tag")
 public class UpdateTagController {
 
 	private final UpdateTagService updateTagService;
